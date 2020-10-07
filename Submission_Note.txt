@@ -1,0 +1,14 @@
+Late Submission Note - Pandas HW: 
+
+My code ran well, with all the required results and I thought it was ready on time. However, just before the submittal deadline,
+I made some last minute changes to clean it up.  I reran it from the start to confirm it still worked, and then I noticed that 
+something in the lattter part of the code was rewriting certain dataframe results outputs in the earlier part of the code 
+(adding columns that were not supposed to be there yet). 
+
+It took me about 2.5 hours to troubleshoot this, which resulted in a late assignment. 
+
+Things I learned: 
+1 - When you use a dataframe later in the code and add columns, it permanently changes the dataframe, so if you are referencing
+	that dataframe earlier in the code, output from that dataframe may be affected when you rerun it. 
+2 - To get around this, I used the copy function (df2 = df1.copy()), and used the copy of that dataframe to perform 
+	calculations later on in the code.  
